@@ -13,7 +13,11 @@ message CreateUserResponse {
 }
 
 message GetUserRequest {
+    string id = 1;
+}
 
+message GetUserResponse {
+    user.User user = 1;
 }
 
 service UserService {
