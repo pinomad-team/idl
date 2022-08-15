@@ -20,7 +20,24 @@ message GetUserResponse {
     user.User user = 1;
 }
 
+message GetAllUsersRequest {
+}
+
+message GetAllUsersResponse {
+    repeated user.User user = 1;
+}
+
+message DeleteUserRequest {
+    string id = 1;
+}
+
+message DeleteUserResponse {
+    bool ok = 1;
+}
+
 service UserService {
     rpc createUser(CreateUserRequest) returns (CreateUserResponse);
     rpc getUser(GetUserRequest) returns (GetUserResponse);
+    rpc getAllUsers(GetAllUsersRequest) returns (GetAllUsersResponse);
+    rpc deleteUser(DeleteUserRequest) returns (DeleteUserResponse);
 }
