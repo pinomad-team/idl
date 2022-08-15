@@ -24,7 +24,7 @@ message GetAllUsersRequest {
 }
 
 message GetAllUsersResponse {
-    repeated user.User user = 1;
+    repeated user.User users = 1;
 }
 
 message DeleteUserRequest {
