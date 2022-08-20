@@ -30,7 +30,6 @@ message GetUserResponse {
 }
 
 message GetMyProfileRequest {
-    string id = 1;
 }
 
 message GetMyProfileResponse {
