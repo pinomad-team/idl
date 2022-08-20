@@ -29,6 +29,14 @@ message GetUserResponse {
     user.User user = 1;
 }
 
+message GetMyProfileRequest {
+    string id = 1;
+}
+
+message GetMyProfileResponse {
+    user.User user = 1;
+}
+
 message GetAllUsersRequest {
 }
 
