@@ -6,6 +6,7 @@ import "user/user.proto";
 
 message CreateUserRequest {
     user.User user = 1;
+    user.AuthType authType = 2;
 }
 
 message CreateUserResponse {
