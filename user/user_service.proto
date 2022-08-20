@@ -13,6 +13,14 @@ message CreateUserResponse {
     user.User user = 1;
 }
 
+message UpdateUserRequest {
+    user.User user = 1;
+}
+
+message UpdateUserResponse {
+    user.User user = 1;
+}
+
 message GetUserRequest {
     string id = 1;
 }
