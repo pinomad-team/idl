@@ -12,6 +12,8 @@ message User {
     repeated UserAuth userAuths = 5;
     google.protobuf.Timestamp createdAt = 6;
     google.protobuf.Timestamp modifiedAt = 7;
+    optional string email = 8;
+    optional string phoneNumber = 9;
 }
 
 enum AuthType {
