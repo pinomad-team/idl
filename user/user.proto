@@ -8,8 +8,8 @@ import "google/protobuf/timestamp.proto";
 message User {
     string id = 1;
     bool onboarded = 2;
-    google.protobuf.StringValue name = 3;
-    google.protobuf.StringValue displayName = 4;
+    optional string name = 3;
+    optional string displayName = 4;
     repeated UserAuth userAuths = 5;
     google.protobuf.Timestamp createdAt = 6;
     google.protobuf.Timestamp modifiedAt = 7;
@@ -25,6 +25,6 @@ enum AuthType {
 message UserAuth {
     string id = 1;
     AuthType authType = 2;
-    google.protobuf.StringValue externalId = 3;
-    google.protobuf.StringValue userId = 4;
+    optional string externalId = 3;
+    optional string userId = 4;
 }
