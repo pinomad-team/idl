@@ -6,7 +6,7 @@ import "google/protobuf/timestamp.proto";
 
 message User {
     string id = 1;
-    bool onboarded = 2;
+    optional bool onboarded = 2;
     optional string name = 3;
     optional string displayName = 4;
     repeated UserAuth userAuths = 5;
