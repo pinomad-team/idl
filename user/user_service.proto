@@ -15,6 +15,7 @@ message CreateUserResponse {
 
 message UpdateUserRequest {
     user.User user = 1;
+    user.AuthType authType = 2;
 }
 
 message UpdateUserResponse {
@@ -57,6 +58,6 @@ service UserService {
     rpc getUser(GetUserRequest) returns (GetUserResponse);
     rpc getAllUsers(GetAllUsersRequest) returns (GetAllUsersResponse);
     rpc deleteUser(DeleteUserRequest) returns (DeleteUserResponse);
-    rpc updateUser (UpdateUserRequest) returns (UpdateUserResponse);
-    rpc getMyProfile (GetMyProfileRequest) returns (GetMyProfileResponse);
+    rpc updateUser(UpdateUserRequest) returns (UpdateUserResponse);
+    rpc getMyProfile(GetMyProfileRequest) returns (GetMyProfileResponse);
 }
