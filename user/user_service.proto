@@ -46,7 +46,7 @@ message GetAllUsersResponse {
 }
 
 message DeleteUserRequest {
-    string id = 1;
+    user.AuthType authType = 1;
 }
 
 message DeleteUserResponse {
