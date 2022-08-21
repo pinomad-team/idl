@@ -30,6 +30,8 @@ message GetUserResponse {
 }
 
 message GetMyProfileRequest {
+    user.AuthType authType = 1;
+    optional string externalId = 2;
 }
 
 message GetMyProfileResponse {
